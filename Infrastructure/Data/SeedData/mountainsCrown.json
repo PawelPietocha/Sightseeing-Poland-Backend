@@ -1,0 +1,254 @@
+[
+    {
+        "Id": 1,
+        "Name": "Łysica",
+        "Height": 614,
+        "ImagePath": "https://upload.wikimedia.org/wikipedia/commons/7/79/Polom_nad_Lysicou_-_panoramio.jpg",
+        "VoivodeshipId": 6,
+        "MountainsRangeId": 1,
+        "Visited": false
+    },
+    {
+        "Id": 2,
+        "Name": "Ślęża",
+        "Height": 718,
+        "ImagePath": "https://upload.wikimedia.org/wikipedia/commons/1/19/%C5%9Al%C4%99%C5%BCa_-_widok_z_Wie%C5%BCycy.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 2,
+        "Visited": false
+    },
+    {
+        "Id": 3,
+        "Name": "Skopiec",
+        "Height": 724,
+        "ImagePath": "https://goryaktywnie.pl/wp-content/uploads/2022/04/Skopiec-widok-x-1024x577.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 3,
+        "Visited": false
+    },
+    {
+        "Id": 4,
+        "Name": "Kłodzka Góra",
+        "Height": 765,
+        "ImagePath": "https://www.ahojprzygodo.com/wp-content/uploads/2020/08/Klodzka-Gora-Wieza-widokowa-korona-gor-polski-Gory-bardzkie-Klodzko-ahoj-przygodo-dolnoslaskie-szczyt-13.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 4,
+        "Visited": false
+    },
+    {
+        "Id": 5,
+        "Name": "Chełmiec",
+        "Height": 869,
+        "ImagePath": "https://hasajacezajace.com/wp-content/uploads/2020/11/DSC05511.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 5,
+        "Visited": false
+    },
+    {
+        "Id": 6,
+        "Name": "Biskupia Kopa",
+        "Height": 889,
+        "ImagePath": "https://static.polskieszlaki.pl/zdjecia/turystyka/2023-02/1920_1080/biskupia-kopa-33-z-67.jpg",
+        "VoivodeshipId": 4,
+        "MountainsRangeId": 6,
+        "Visited": false
+    },
+    {
+        "Id": 7,
+        "Name": "Lubomir",
+        "Height": 912,
+        "ImagePath": "https://zciastemwplecaku.pl/wp-content/uploads/2021/03/DSC04225-1024x683.jpg",
+        "VoivodeshipId": 2,
+        "MountainsRangeId": 7,
+        "Visited": false
+    },
+    {
+        "Id": 8,
+        "Name": "Szczeliniec Wielki",
+        "Height": 919,
+        "ImagePath": "https://www.niesamowitapolska.eu/media/com_jbusinessdirectory/pictures/companies/403/szczeliniec_wielki_kudowa_zdroj___3_.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 8,
+        "Visited": false
+    },
+    {
+        "Id": 9,
+        "Name": "Czupel",
+        "Height": 934,
+        "ImagePath": "https://hasajacezajace.com/wp-content/uploads/2021/09/czupel-beskid-maly-17.jpg",
+        "VoivodeshipId": 3,
+        "MountainsRangeId": 9,
+        "Visited": false
+    },
+    {
+        "Id": 10,
+        "Name": "Waligóra",
+        "Height": 936,
+        "ImagePath": "https://www.e-horyzont.pl/media/wysiwyg/blog/2021/05/waligora-08-min.jpg",
+        "VoivodeshipId": 1,
+        "MountainsRangeId": 10,
+        "Visited": false
+    },
+    {
+    "Id": 11,
+    "Name": "Skalnik",
+    "Height": 945,
+      "ImagePath": "https://www.ahojprzygodo.com/wp-content/uploads/2020/03/210314151111-ahoj-przygodo-skalnik-szczyt-trasa-dla-dzieci-rudawy-janowickie-wycieczka.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 11,
+      "Visited": false
+    },
+    {
+    "Id": 12,
+    "Name": "Jagodna",
+    "Height": 977,
+      "ImagePath": "https://hasajacezajace.com/wp-content/uploads/2020/10/DSC05352.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 12,
+      "Visited": false
+    },
+    {
+    "Id": 13,
+    "Name": "Kowadło",
+    "Height": 989,
+      "ImagePath": "https://zciastemwplecaku.pl/wp-content/uploads/2021/04/Kowadlo-test-scaled-e1619776943877.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 13,
+      "Visited": false
+    },
+    {
+        "Id": 14,
+        "Name": "Lackowa",
+      "Height": 997,
+      "ImagePath": "https://gdziebytudalej.pl/wp-content/uploads/2018/06/01.-W-drodze-do-Izb.-Wszystkie-drogi-prowadz%C4%85-na-Lackow%C4%85-e1528315954381.jpg",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 14,
+      "Visited": false
+    },
+    {
+        "Id": 15,
+        "Name": "Wielka Sowa",
+      "Height": 1015,
+      "ImagePath": "https://sudeckiedrogi.files.wordpress.com/2019/10/47287742.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 15,
+      "Visited": false
+    },
+    {
+        "Id": 16,
+        "Name": "Wysoka",
+      "Height": 1050,
+      "ImagePath": "https://weekendowka.pl/wp-content/uploads/2021/12/DSC_0065-1200x798.jpg",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 16,
+      "Visited": false
+    },
+    {
+        "Id": 17,
+        "Name": "Orlica",
+      "Height": 1084,
+      "ImagePath": "https://marcinkarpinski.pl/img/relacja/kgp-orlica/og-kgp-orlica.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 17,
+      "Visited": false
+    },
+    {
+        "Id": 18,
+        "Name": "Rudawiec",
+      "Height": 1112,
+      "ImagePath": "https://zieloniwpodrozy.pl/wp-content/uploads/2022/03/Snieznik.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 18,
+      "Visited": false
+    },
+    {
+        "Id": 19,
+        "Name": "Wysoka Kopa",
+      "Height": 1126,
+      "ImagePath": "https://marcinkarpinski.pl/img/relacja/kgp-wysoka-kopa/1200-kgp-wysoka-kopa-000.webp",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 19,
+      "Visited": false
+    },
+    {
+        "Id": 20,
+        "Name": "Mogielica",
+      "Height": 1170,
+      "ImagePath": "https://trasynawczasy.pl/750-lightbox_default/mogielica-petla-z-przeleczy-rydza-smiglego.jpg",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 20,
+      "Visited": false
+    },
+    {
+        "Id": 21,
+        "Name": "Skrzyczne",
+      "Height": 1257,
+      "ImagePath": "https://bi.im-g.pl/im/41/43/1a/z27541057Q,Szlaki-na-Skrzyczne-wioda-ze-Szczyrku--ale-takze-z.jpg",
+      "VoivodeshipId": 3,
+      "MountainsRangeId": 21,
+      "Visited": false
+    },
+    {
+        "Id": 22,
+        "Name": "Radziejowa",
+      "Height": 1262,
+      "ImagePath": "https://visitmalopolska.pl/documents/20194/2464025/Radziejowa/3ca88cba-a0f1-4075-b160-2558d59ee628?t=1655815033197&imageThumbnail=5",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 22,
+      "Visited": false
+    },
+    {
+        "Id": 23,
+        "Name": "Turbacz",
+      "Height": 1310,
+      "ImagePath": "https://upload.wikimedia.org/wikipedia/commons/3/38/Turbacz_%285%29.jpg",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 23,
+      "Visited": false
+    },
+    {
+        "Id": 24,
+        "Name": "Tarnica",
+      "Height": 1346,
+      "ImagePath": "https://hasajacezajace.com/wp-content/uploads/2019/11/DSC_3508-1.jpg",
+      "VoivodeshipId": 5,
+      "MountainsRangeId": 24,
+      "Visited": false
+    },
+    {
+        "Id": 25,
+      "Name": "Śnieżnik",
+      "Height": 1425,
+      "ImagePath": "https://www.wiezanasniezniku.pl/wp-content/uploads/2022/10/WiezaNaSniezniku_RobertJamroz-1c.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 25,
+      "Visited": false
+    },
+    {
+        "Id": 26,
+        "Name": "Śnieżka",
+      "Height": 1602,
+      "ImagePath": "https://www.karpacz.pl/img/attractions/Sniezka/rys_24.jpg",
+      "VoivodeshipId": 1,
+      "MountainsRangeId": 26,
+      "Visited": false
+    },
+    {
+        "Id": 27,
+        "Name": "Babia Góra",
+      "Height": 1725,
+      "ImagePath": "https://portaltatrzanski.pl/upload/article/fcf58149b97ee41d499c32a77e7c5cb0.jpeg",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 27,
+      "Visited": false
+    },
+    {
+        "Id": 28,
+        "Name": "Rysy",
+      "Height": 2499,
+      "ImagePath": "https://i.wpimg.pl/1200x/filerepo.grupawp.pl/api/v1/display/embed/f3db4695-9a9e-413d-b7f1-6d62de01becf",
+      "VoivodeshipId": 2,
+      "MountainsRangeId": 28,
+      "Visited": false
+    }
+]

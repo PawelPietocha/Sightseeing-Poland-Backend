@@ -1,0 +1,115 @@
+[
+    {
+        "Id": 1,
+        "Name": "Góry Świętokrzyskie"
+    },
+    {
+        "Id": 2,
+        "Name": "Masyw Ślęży"
+    },
+    {
+        "Id": 3,
+        "Name": "Góry Kaczawskie"
+    },
+    {
+        "Id": 4,
+        "Name": "Góry Bardzkie"
+    },
+    {
+        "Id": 5,
+        "Name": "Góry Wałbrzyskie"
+    },
+    {
+        "Id": 6,
+        "Name": "Góry Opawskie"
+    },
+    {
+        "Id": 7,
+        "Name": "Beskid Makowski"
+    },
+    {
+        "Id": 8,
+        "Name": "Góry Stołowe"
+    },
+    {
+        "Id": 9,
+        "Name": "Beskid Mały"
+    },
+    {
+        "Id": 10,
+        "Name": "Góry Kamienne"
+    },
+    {
+        "Id": 11,
+        "Name": "Rudawy Janowickie"
+    },
+    {
+        "Id": 12,
+        "Name": "Góry Bystrzyckie"
+    },
+    {
+        "Id": 13,
+        "Name": "Góry Złote"
+    },
+    {
+        "Id": 14,
+        "Name": "Beskid Niski"
+    },
+    {
+        "Id": 15,
+        "Name": "Góry Sowie"
+    },
+    {
+        "Id": 16,
+        "Name": "Pieniny"
+    },
+    {
+        "Id": 17,
+        "Name": "Góry Orlickie"
+    },
+    {
+        "Id": 18,
+        "Name": "Góry Bialskie"
+    },
+    {
+        "Id": 19,
+        "Name": "Góry Izerskie"
+    },
+    {
+        "Id": 20,
+        "Name": "Beskid Wyspowy"
+    },
+    {
+        "Id": 21,
+        "Name": "Beski Śląski"
+    },
+    {
+        "Id": 22,
+        "Name": "Beskid Sądecki"
+    },
+    {
+        "Id": 23,
+        "Name": "Gorce"
+    },
+    {
+        "Id": 24,
+        "Name": "Bieszczady"
+    },
+    {
+        "Id": 25,
+        "Name": "Masyw Śnieżnika"
+    },
+    {
+        "Id": 26,
+        "Name": "Karkonosze"
+    },
+    {
+        "Id": 27,
+        "Name": "Beskid Żywiecki"
+    },
+    {
+        "Id": 28,
+        "Name": "Tatry"
+    }
+
+]

@@ -129,3 +129,4 @@ C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0\Infrastructure.dll
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0\Infrastructure.pdb
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0\Core.pdb
+C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\api\obj\Debug\net8.0\API.sourcelink.json

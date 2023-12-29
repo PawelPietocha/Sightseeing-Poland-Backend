@@ -1,0 +1,66 @@
+[
+    {
+        "Id": 1,
+        "Name": "Dolnośląskie"
+    },
+    {
+        "Id": 2,
+        "Name": "Małopolskie"
+    },
+    {
+        "Id": 3,
+        "Name": "Śląskie"
+    },
+    {
+        "Id": 4,
+        "Name": "Opolskie"
+    },
+    {
+        "Id": 5,
+        "Name": "Podkarpackie"
+    },
+    {
+        "Id": 6,
+        "Name": "Świętokrzyskie"
+    },
+    {
+        "Id": 7,
+        "Name": "Lubelskie"
+    },
+    {
+        "Id": 8,
+        "Name": "Mazowieckie"
+    },
+    {
+        "Id": 9,
+        "Name": "Łódzkie"
+    },
+    {
+        "Id": 10,
+        "Name": "Wielkopolskie"
+    },
+    {
+        "Id": 11,
+        "Name": "Lubuskie"
+    },
+    {
+        "Id": 12,
+        "Name": "Kujawsko-Pomorskie"
+    },
+    {
+        "Id": 13,
+        "Name": "Podlaskie"
+    },
+    {
+        "Id": 14,
+        "Name": "Warmińsko-Mazurskie"
+    },
+    {
+        "Id": 15,
+        "Name": "Pomorskie"
+    },
+    {
+        "Id": 16,
+        "Name": "Zachodnio-Pomorskie"
+    }
+]

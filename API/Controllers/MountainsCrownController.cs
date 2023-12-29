@@ -1,6 +1,5 @@
-
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,28 +9,43 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class MountainsCrownController : ControllerBase
     {
-        private readonly SightseeingContext _context;
-        public MountainsCrownController(SightseeingContext context)
+        private readonly IMountainRepository _mountainRepository;
+        public MountainsCrownController(IMountainRepository mountainRepository)
         {
-            _context = context;
-            
+            _mountainRepository = mountainRepository;
         }
 
 
         [HttpGet]
         public async Task<ActionResult<List<Mountain>>> GetMountains()
         {
-            var mountains =  await _context.Mountains.ToListAsync();
+            var mountains =  await _mountainRepository.GetMountains();
 
-            return mountains;
+            return Ok(mountains);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Mountain>> GetMountain(int id)
         {
-            var mountain = await _context.Mountains.FirstAsync(x => x.Id == id);
+            var mountain = await _mountainRepository.GetMountain(id);
 
             return mountain;
+        }
+
+        [HttpGet("voivodeships")]
+        public async Task<ActionResult<Mountain>> GetVoivodeships()
+        {
+            var voivodeships = await _mountainRepository.GetVoivodeships();
+
+            return Ok(voivodeships);
+        }
+
+        [HttpGet("mountainsRanges")]
+        public async Task<ActionResult<Mountain>> GetMountainsRanges()
+        {
+            var mountainsRanges = await _mountainRepository.GetMountainsRanges();
+
+            return Ok(mountainsRanges);
         }
     }
 }
