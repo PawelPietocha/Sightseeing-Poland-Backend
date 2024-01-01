@@ -130,3 +130,6 @@ C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0\Infrastructure.pdb
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\API\bin\Debug\net8.0\Core.pdb
 C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\api\obj\Debug\net8.0\API.sourcelink.json
+C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\48508\Desktop\Pawel\Nauka\DotNet\SightseeingPoland\api\bin\Debug\net8.0\API.staticwebassets.runtime.json

@@ -1,51 +1,107 @@
+using API.Dtos;
+using API.Errors;
+using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifictions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class MountainsCrownController : ControllerBase
+    public class MountainsCrownController : BaseApiController
     {
-        private readonly IMountainRepository _mountainRepository;
-        public MountainsCrownController(IMountainRepository mountainRepository)
+        private readonly IGenericRepository<Mountain> _mountainsRepository;
+        private readonly IGenericRepository<Voivodeship> _voivodeshipRepository;
+        private readonly IGenericRepository<MountainsRange> _mountainRangeRepository;
+        private readonly IMapper _mapper;
+
+        public MountainsCrownController
+        (
+            IGenericRepository<Mountain> mountainsRepository,
+            IGenericRepository<Voivodeship> voivodeshipRepository,
+            IGenericRepository<MountainsRange> mountainRangeRepository,
+            IMapper mapper
+            )
         {
-            _mountainRepository = mountainRepository;
+            _mountainsRepository = mountainsRepository;
+            _voivodeshipRepository = voivodeshipRepository;
+            _mountainRangeRepository = mountainRangeRepository;
+            _mapper = mapper;
         }
 
 
         [HttpGet]
-        public async Task<ActionResult<List<Mountain>>> GetMountains()
+        public async Task<ActionResult<IReadOnlyList<MountainDto>>> GetMountains()
         {
-            var mountains =  await _mountainRepository.GetMountains();
+            var spec = new MountainWithMountainRangeAndVoivodeshipSpecification();
+            var mountains = await _mountainsRepository.ListAsync(spec);
 
-            return Ok(mountains);
+            return Ok(_mapper.Map<IReadOnlyList<Mountain>, IReadOnlyList<MountainDto>>(mountains));
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Mountain>> GetMountain(int id)
+        public async Task<ActionResult<MountainDto>> GetMountain(int id)
         {
-            var mountain = await _mountainRepository.GetMountain(id);
+            var spec = new MountainWithMountainRangeAndVoivodeshipSpecification(id);
+            var mountain = await _mountainsRepository.GetEntityWithSpec(spec);
 
-            return mountain;
+            if(mountain == null )
+            {
+                return NotFound(new APIResponse(404));
+            }
+
+            return _mapper.Map<Mountain, MountainDto>(mountain);
         }
 
         [HttpGet("voivodeships")]
-        public async Task<ActionResult<Mountain>> GetVoivodeships()
+        public async Task<ActionResult<List<Voivodeship>>> GetVoivodeships()
         {
-            var voivodeships = await _mountainRepository.GetVoivodeships();
+            var voivodeships = await _voivodeshipRepository.ListAllAsync();
 
             return Ok(voivodeships);
         }
 
-        [HttpGet("mountainsRanges")]
-        public async Task<ActionResult<Mountain>> GetMountainsRanges()
+        [HttpGet("voivodeships/{id}")]
+        public async Task<ActionResult<Voivodeship>> GetVoivodeship(int id)
         {
-            var mountainsRanges = await _mountainRepository.GetMountainsRanges();
+            var voivodeship = await _voivodeshipRepository.GetByIdAsync(id);
+
+            if(voivodeship == null )
+            {
+                return NotFound(new APIResponse(404));
+            }
+
+            return Ok(voivodeship);
+        }
+
+        [HttpGet("mountainsRanges")]
+        public async Task<ActionResult<List<MountainsRange>>> GetMountainsRanges()
+        {
+            var mountainsRanges = await _mountainRangeRepository.ListAllAsync();
 
             return Ok(mountainsRanges);
         }
-    }
+
+        [HttpGet("mountainsRanges/{id}")]
+        public async Task<ActionResult<MountainsRange>> GetMountainsRange(int id)
+        {
+            var mountainsRange = await _mountainRangeRepository.GetByIdAsync(id);
+
+            if(mountainsRange == null )
+            {
+                return NotFound(new APIResponse(404));
+            }
+
+            return Ok(mountainsRange);
+        }
+
+        [HttpGet("test")]
+        public ActionResult GetTest()
+        {
+            Mountain thing = null;
+            var thingToReturn = thing.ToString();
+            return Ok();
+        }
+}
 }
