@@ -1,5 +1,6 @@
 using API.Dtos;
 using API.Errors;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -32,12 +33,20 @@ namespace API.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<MountainDto>>> GetMountains()
+        public async Task<ActionResult<Pagination<MountainDto>>> GetMountains(
+            [FromQuery] MountainsSpecParams mountainsParams)
         {
-            var spec = new MountainWithMountainRangeAndVoivodeshipSpecification();
+            var spec = new MountainWithMountainRangeAndVoivodeshipSpecification(mountainsParams);
+
+            var countSpec = new MountWithFiltersForCountSpecification(mountainsParams);
+
+            var totalItems = await _mountainsRepository.CountAsync(countSpec);
+
             var mountains = await _mountainsRepository.ListAsync(spec);
 
-            return Ok(_mapper.Map<IReadOnlyList<Mountain>, IReadOnlyList<MountainDto>>(mountains));
+            var data = _mapper.Map<IReadOnlyList<Mountain>, IReadOnlyList<MountainDto>>(mountains); 
+
+            return Ok(new Pagination<MountainDto>(mountainsParams.PageIndex, mountainsParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]
