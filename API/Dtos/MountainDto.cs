@@ -17,7 +17,8 @@ namespace API.Dtos
         public int MountainsRangeId { get; set; }
         public bool Visited { get; set; }
         public DateTime? DateOfVisit { get; set; }
-        public int? TripTimeInMinutes { get; set; }
+        public int? TripTimeMinutes { get; set; }
+        public int? TripTimeHours {get; set; }
         public string StartPlace { get; set; }
         public string EndPlace { get; set; }
         public int? TripLenghtInKm { get; set; }

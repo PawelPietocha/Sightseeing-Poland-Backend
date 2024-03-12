@@ -105,12 +105,22 @@ namespace API.Controllers
             return Ok(mountainsRange);
         }
 
-        [HttpGet("test")]
-        public ActionResult GetTest()
+        [HttpPost("update")]
+        public async Task<ActionResult<bool>> UpdateMountain(
+            [FromBody] MountainDto mountainDto)
         {
-            Mountain thing = null;
-            var thingToReturn = thing.ToString();
-            return Ok();
+            var mountain = _mapper.Map<MountainDto, Mountain>(mountainDto);
+
+            int index = mountain.ImagePath.IndexOf("https://localhost:5001/");
+            string cleanPath = (index < 0)
+                ? mountain.ImagePath
+                : mountain.ImagePath.Remove(index, "https://localhost:5001/".Length);
+
+                mountain.ImagePath = cleanPath;
+
+            var result = await _mountainsRepository.UpdateAsync(mountain);
+            
+            return false;
         }
 }
 }

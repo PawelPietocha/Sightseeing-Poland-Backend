@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(SightseeingContext))]
-    [Migration("20231231131650_InitialCreate")]
+    [Migration("20240110191528_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -58,7 +58,10 @@ namespace Infrastructure.Data.Migrations
                     b.Property<int?>("TripLenghtInKm")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("TripTimeInMinutes")
+                    b.Property<int?>("TripTimeHours")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("TripTimeMinutes")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Visited")

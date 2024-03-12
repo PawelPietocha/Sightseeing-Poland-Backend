@@ -12,7 +12,7 @@ namespace Core.Specifictions
             set => _pageSize = (value > MaxPageSize) ? MaxPageSize : value;
         }
         private const int MaxPageSize = 50;
-        private int _pageSize = 6;
+        private int _pageSize = 28;
 
         private string _search;
 

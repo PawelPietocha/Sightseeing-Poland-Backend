@@ -20,8 +20,7 @@ namespace Core.Specifictions
             ApplyPaging(mountainsParams.PageSize * (mountainsParams.PageIndex - 1),
                 mountainsParams.PageSize);
 
-            if(!string.IsNullOrEmpty(mountainsParams.Sort)) 
-            {
+            
                 switch (mountainsParams.Sort)
                 {
                     case "heightAsc":
@@ -43,10 +42,9 @@ namespace Core.Specifictions
                         AddOrderByDescending(m => m.MountainsRange.Name);
                         break;
                     default: 
-                        AddOrderBy(m => m.Name);
+                        AddOrderBy(m => m.Height);
                         break;
                 };
-            }
         }
 
         public MountainWithMountainRangeAndVoivodeshipSpecification(int id) 

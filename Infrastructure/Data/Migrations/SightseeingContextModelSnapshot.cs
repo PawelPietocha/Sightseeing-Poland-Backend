@@ -55,7 +55,10 @@ namespace Infrastructure.Data.Migrations
                     b.Property<int?>("TripLenghtInKm")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("TripTimeInMinutes")
+                    b.Property<int?>("TripTimeHours")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("TripTimeMinutes")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Visited")

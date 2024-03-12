@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj": {}
+    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj": {
+    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj",
+        "projectPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj",
         "packagesPath": "C:\\Users\\48508\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\obj\\",
+        "outputPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\48508\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -45,6 +45,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -113,6 +121,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -171,9 +185,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.0, )"
             }
           },
           "imports": [

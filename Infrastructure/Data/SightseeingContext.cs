@@ -6,7 +6,7 @@ namespace Infrastructure.Data
 {
     public class SightseeingContext : DbContext
     {
-        public SightseeingContext(DbContextOptions options) : base(options)
+        public SightseeingContext(DbContextOptions<SightseeingContext> options) : base(options)
         {
         }
 
