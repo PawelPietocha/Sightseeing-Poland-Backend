@@ -11,30 +11,20 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(SightseeingContext))]
-    [Migration("20240110191528_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240410204632_Sightseeing3")]
+    partial class Sightseeing3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.1");
 
             modelBuilder.Entity("Core.Entities.Mountain", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
-                    b.Property<DateTime?>("DateOfVisit")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("ElevationGainInMeters")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("EndPlace")
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
 
                     b.Property<int>("Height")
                         .HasColumnType("INTEGER");
@@ -51,22 +41,6 @@ namespace Infrastructure.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("StartPlace")
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("TripLenghtInKm")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("TripTimeHours")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("TripTimeMinutes")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("Visited")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("VoivodeshipId")
                         .HasColumnType("INTEGER");
 
@@ -77,6 +51,46 @@ namespace Infrastructure.Data.Migrations
                     b.HasIndex("VoivodeshipId");
 
                     b.ToTable("Mountains");
+                });
+
+            modelBuilder.Entity("Core.Entities.MountainToUsers", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DateOfVisit")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ElevationGainInMeters")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("EndPlace")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("MountainId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("StartPlace")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TripLenghtInKm")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TripTimeHours")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TripTimeMinutes")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MountainId");
+
+                    b.ToTable("MountainToUsers");
                 });
 
             modelBuilder.Entity("Core.Entities.MountainsRange", b =>
@@ -124,6 +138,17 @@ namespace Infrastructure.Data.Migrations
                     b.Navigation("MountainsRange");
 
                     b.Navigation("Voivodeship");
+                });
+
+            modelBuilder.Entity("Core.Entities.MountainToUsers", b =>
+                {
+                    b.HasOne("Core.Entities.Mountain", "Mountain")
+                        .WithMany()
+                        .HasForeignKey("MountainId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mountain");
                 });
 #pragma warning restore 612, 618
         }

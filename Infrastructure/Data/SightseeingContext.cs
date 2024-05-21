@@ -13,6 +13,7 @@ namespace Infrastructure.Data
         public DbSet<Mountain> Mountains { get; set; }
         public DbSet<Voivodeship> Voivodeships { get; set; }
         public DbSet<MountainsRange> MountainsRanges { get; set; }
+        public DbSet<MountainToUsers> MountainToUsers {get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

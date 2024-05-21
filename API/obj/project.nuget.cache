@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HapqvBQARov+bL/QkrNprhGTnHoKAWaBc5zpA2Oko5sTvrDBddBEfNzTmybSKZJY4QmA7IfUQwMY//LjfqwL2g==",
+  "dgSpecHash": "7uC2cy7VY4invGQzxRAnLgWpaijvIcxQWtcqoOZpOqi/aIls3j7Qs+775JeaObTQVsp6v8PyOVSwyUUnooRneQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\48508\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\48508\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

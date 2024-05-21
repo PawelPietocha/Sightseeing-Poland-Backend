@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj": {}
+    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj": {
+    "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\API.csproj",
+        "projectPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\API.csproj",
         "packagesPath": "C:\\Users\\48508\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\obj\\",
+        "outputPath": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\48508\\AppData\\Roaming\\NuGet\\NuGet.Config"

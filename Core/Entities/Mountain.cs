@@ -9,13 +9,5 @@ namespace Core.Entities
         public int VoivodeshipId { get; set; }
         public MountainsRange MountainsRange { get; set; }
         public int MountainsRangeId { get; set; }
-        public bool Visited { get; set; }
-        public DateTime? DateOfVisit { get; set; }
-        public int? TripTimeMinutes { get; set; }
-        public int? TripTimeHours {get; set; }
-        public string StartPlace { get; set; }
-        public string EndPlace { get; set; }
-        public int? TripLenghtInKm { get; set; }
-        public int? ElevationGainInMeters { get; set; }
     }
 }

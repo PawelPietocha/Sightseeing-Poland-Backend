@@ -9,6 +9,9 @@ namespace Core.Entities.Identity
     public class AppUser: IdentityUser
     {
         public string DisplayName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public byte Gender {get; set; }
+        public int VoivodeshipId {get; set; } 
 
         
     }

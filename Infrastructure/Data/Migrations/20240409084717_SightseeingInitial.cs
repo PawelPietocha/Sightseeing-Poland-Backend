@@ -1,12 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class SightseeingInitial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -47,15 +46,7 @@ namespace Infrastructure.Data.Migrations
                     Height = table.Column<int>(type: "INTEGER", nullable: false),
                     ImagePath = table.Column<string>(type: "TEXT", nullable: false),
                     VoivodeshipId = table.Column<int>(type: "INTEGER", nullable: false),
-                    MountainsRangeId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Visited = table.Column<bool>(type: "INTEGER", nullable: false),
-                    DateOfVisit = table.Column<DateTime>(type: "TEXT", nullable: true),
-                    TripTimeMinutes = table.Column<int>(type: "INTEGER", nullable: true),
-                    TripTimeHours = table.Column<int>(type: "INTEGER", nullable: true),
-                    StartPlace = table.Column<string>(type: "TEXT", maxLength: 100, nullable: true),
-                    EndPlace = table.Column<string>(type: "TEXT", maxLength: 100, nullable: true),
-                    TripLenghtInKm = table.Column<int>(type: "INTEGER", nullable: true),
-                    ElevationGainInMeters = table.Column<int>(type: "INTEGER", nullable: true)
+                    MountainsRangeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

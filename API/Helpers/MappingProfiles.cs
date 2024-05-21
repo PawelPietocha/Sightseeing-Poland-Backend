@@ -22,7 +22,8 @@ namespace API.Helpers
                     Name = s.MountainsRange, 
                     Id = s.MountainsRangeId
                     }));
-                
+            CreateMap<MountainToUserDto, MountainToUsers>();
+            CreateMap<MountainToUsers, MountainToUserDto>();   
         }
     }
 }

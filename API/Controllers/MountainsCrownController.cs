@@ -15,6 +15,7 @@ namespace API.Controllers
         private readonly IGenericRepository<Mountain> _mountainsRepository;
         private readonly IGenericRepository<Voivodeship> _voivodeshipRepository;
         private readonly IGenericRepository<MountainsRange> _mountainRangeRepository;
+        private readonly IGenericRepository<MountainToUsers> _mountainToUsersRepository;
         private readonly IMapper _mapper;
 
         public MountainsCrownController
@@ -22,12 +23,14 @@ namespace API.Controllers
             IGenericRepository<Mountain> mountainsRepository,
             IGenericRepository<Voivodeship> voivodeshipRepository,
             IGenericRepository<MountainsRange> mountainRangeRepository,
+            IGenericRepository<MountainToUsers> mountainToUsersRepository,
             IMapper mapper
             )
         {
             _mountainsRepository = mountainsRepository;
             _voivodeshipRepository = voivodeshipRepository;
             _mountainRangeRepository = mountainRangeRepository;
+            _mountainToUsersRepository = mountainToUsersRepository;
             _mapper = mapper;
         }
 
@@ -122,5 +125,26 @@ namespace API.Controllers
             
             return false;
         }
+
+        [HttpPost("markAsVisited")]
+        public async Task<ActionResult<bool>> MarkAsVisited(
+            [FromBody] MountainToUserDto mountainToUsersDto)
+            {
+                var mountainToUser = _mapper.Map<MountainToUserDto, MountainToUsers>(mountainToUsersDto);
+                var result = await _mountainToUsersRepository.AddAsync(mountainToUser);
+                if(result != null) {
+                    return true;
+                }
+                return false;
+            }
+        [HttpGet("getVisitedMountainsCrown/{userId}")]
+        public async Task<ActionResult<List<MountainToUserDto>>> GetVisitedMountainsCrown(string userId) {
+            var visitedMountainsCrownToUsers = await _mountainToUsersRepository.ListAllAsync();
+            var filteredVisitedList = visitedMountainsCrownToUsers.Where(x => x.UserId == userId);
+            var visitedMountainsCrownToUsersDto = _mapper.Map<IEnumerable<MountainToUsers>, List<MountainToUserDto>>(filteredVisitedList);
+            return visitedMountainsCrownToUsersDto;
+
+        }
+        
 }
 }

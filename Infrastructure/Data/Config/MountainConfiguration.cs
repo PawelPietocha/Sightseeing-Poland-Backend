@@ -11,13 +11,10 @@ namespace Infrastructure.Data.Config
             builder.Property(m => m.Id).IsRequired();
             builder.Property(m => m.Name).IsRequired().HasMaxLength(100);
             builder.Property(m => m.ImagePath).IsRequired();
-            builder.Property(m => m.Visited).IsRequired();
             builder.HasOne(m => m.Voivodeship).WithMany()
                 .HasForeignKey(m => m.VoivodeshipId);
             builder.HasOne(m => m.MountainsRange).WithMany()
                 .HasForeignKey(m => m.MountainsRangeId);
-            builder.Property(m => m.StartPlace).IsRequired(false).HasMaxLength(100);
-            builder.Property(m => m.EndPlace).IsRequired(false).HasMaxLength(100);
 
         }
     }

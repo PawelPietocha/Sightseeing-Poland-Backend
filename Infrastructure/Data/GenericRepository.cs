@@ -47,6 +47,19 @@ namespace Infrastructure.Data
             return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
         }
 
+        public async Task<T> AddAsync(T objectToAdd)
+        {
+            var entity = await Task<T>.Run(() =>
+            {
+                var addedEntity =_context.Set<T>().Add(objectToAdd);
+                _context.SaveChangesAsync();
+                return addedEntity;
+            }
+             );
+             return null;
+
+        }
+
         public async Task<T> UpdateAsync(T objectToUpdate)
         { 
               var entity = await Task<T>.Run(() =>

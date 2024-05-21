@@ -5,8 +5,7 @@
         "Height": 614,
         "ImagePath": "/mountainsCrownImages/Lysica.jpg",
         "VoivodeshipId": 6,
-        "MountainsRangeId": 1,
-        "Visited": false
+        "MountainsRangeId": 1
     },
     {
         "Id": 2,
@@ -14,8 +13,7 @@
         "Height": 718,
         "ImagePath": "/mountainsCrownImages/Sleza.jpg",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 2,
-        "Visited": false
+        "MountainsRangeId": 2
     },
     {
         "Id": 3,
@@ -23,8 +21,7 @@
         "Height": 724,
         "ImagePath": "/mountainsCrownImages/Skopiec.webp",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 3,
-        "Visited": false
+        "MountainsRangeId": 3
     },
     {
         "Id": 4,
@@ -32,8 +29,7 @@
         "Height": 765,
         "ImagePath": "/mountainsCrownImages/Klodzka-Gora.jpg",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 4,
-        "Visited": false
+        "MountainsRangeId": 4
     },
     {
         "Id": 5,
@@ -41,8 +37,7 @@
         "Height": 869,
         "ImagePath": "/mountainsCrownImages/Chelmiec.jpg",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 5,
-        "Visited": false
+        "MountainsRangeId": 5
     },
     {
         "Id": 6,
@@ -50,8 +45,7 @@
         "Height": 889,
         "ImagePath": "/mountainsCrownImages/Biskpia-Kopa.jpg",
         "VoivodeshipId": 4,
-        "MountainsRangeId": 6,
-        "Visited": false
+        "MountainsRangeId": 6
     },
     {
         "Id": 7,
@@ -59,8 +53,7 @@
         "Height": 912,
         "ImagePath": "/mountainsCrownImages/Lubomir.jpg",
         "VoivodeshipId": 2,
-        "MountainsRangeId": 7,
-        "Visited": false
+        "MountainsRangeId": 7
     },
     {
         "Id": 8,
@@ -68,8 +61,7 @@
         "Height": 919,
         "ImagePath": "/mountainsCrownImages/Szczeliniec-Wielki.jpg",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 8,
-        "Visited": false
+        "MountainsRangeId": 8
     },
     {
         "Id": 9,
@@ -77,8 +69,7 @@
         "Height": 934,
         "ImagePath": "/mountainsCrownImages/Czupel.jpg",
         "VoivodeshipId": 3,
-        "MountainsRangeId": 9,
-        "Visited": false
+        "MountainsRangeId": 9
     },
     {
         "Id": 10,
@@ -86,8 +77,7 @@
         "Height": 936,
         "ImagePath": "/mountainsCrownImages/Waligora.jpg",
         "VoivodeshipId": 1,
-        "MountainsRangeId": 10,
-        "Visited": false
+        "MountainsRangeId": 10
     },
     {
     "Id": 11,
@@ -95,8 +85,7 @@
     "Height": 945,
       "ImagePath": "/mountainsCrownImages/Skalnik.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 11,
-      "Visited": false
+      "MountainsRangeId": 11
     },
     {
     "Id": 12,
@@ -104,8 +93,7 @@
     "Height": 977,
       "ImagePath": "/mountainsCrownImages/Jagodna.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 12,
-      "Visited": false
+      "MountainsRangeId": 12
     },
     {
     "Id": 13,
@@ -113,8 +101,7 @@
     "Height": 989,
       "ImagePath": "/mountainsCrownImages/Kowadlo.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 13,
-      "Visited": false
+      "MountainsRangeId": 13
     },
     {
         "Id": 14,
@@ -122,8 +109,7 @@
       "Height": 997,
       "ImagePath": "/mountainsCrownImages/Lackowa.jpg",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 14,
-      "Visited": false
+      "MountainsRangeId": 14
     },
     {
         "Id": 15,
@@ -131,8 +117,7 @@
       "Height": 1015,
       "ImagePath": "/mountainsCrownImages/Wielka-Sowa.webp",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 15,
-      "Visited": false
+      "MountainsRangeId": 15
     },
     {
         "Id": 16,
@@ -140,8 +125,7 @@
       "Height": 1050,
       "ImagePath": "/mountainsCrownImages/Wysoka.jpg",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 16,
-      "Visited": false
+      "MountainsRangeId": 16
     },
     {
         "Id": 17,
@@ -149,8 +133,7 @@
       "Height": 1084,
       "ImagePath": "/mountainsCrownImages/Orlica.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 17,
-      "Visited": false
+      "MountainsRangeId": 17
     },
     {
         "Id": 18,
@@ -158,8 +141,7 @@
       "Height": 1112,
       "ImagePath": "/mountainsCrownImages/Rudawiec.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 18,
-      "Visited": false
+      "MountainsRangeId": 18
     },
     {
         "Id": 19,
@@ -167,8 +149,7 @@
       "Height": 1126,
       "ImagePath": "/mountainsCrownImages/Wysoka-Kopa.webp",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 19,
-      "Visited": false
+      "MountainsRangeId": 19
     },
     {
         "Id": 20,
@@ -176,8 +157,7 @@
       "Height": 1170,
       "ImagePath": "/mountainsCrownImages/Mogielica.webp",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 20,
-      "Visited": false
+      "MountainsRangeId": 20
     },
     {
         "Id": 21,
@@ -185,8 +165,7 @@
       "Height": 1257,
       "ImagePath": "/mountainsCrownImages/Skrzyczne.jpg",
       "VoivodeshipId": 3,
-      "MountainsRangeId": 21,
-      "Visited": false
+      "MountainsRangeId": 21
     },
     {
         "Id": 22,
@@ -194,8 +173,7 @@
       "Height": 1262,
       "ImagePath": "/mountainsCrownImages/Radziejowa.jpg",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 22,
-      "Visited": false
+      "MountainsRangeId": 22
     },
     {
         "Id": 23,
@@ -203,8 +181,7 @@
       "Height": 1310,
       "ImagePath": "/mountainsCrownImages/Turbacz.jpg",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 23,
-      "Visited": false
+      "MountainsRangeId": 23
     },
     {
         "Id": 24,
@@ -212,8 +189,7 @@
       "Height": 1346,
       "ImagePath": "/mountainsCrownImages/Tarnica.jpg",
       "VoivodeshipId": 5,
-      "MountainsRangeId": 24,
-      "Visited": false
+      "MountainsRangeId": 24
     },
     {
         "Id": 25,
@@ -221,8 +197,7 @@
       "Height": 1425,
       "ImagePath": "/mountainsCrownImages/Snieznik.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 25,
-      "Visited": false
+      "MountainsRangeId": 25
     },
     {
         "Id": 26,
@@ -230,8 +205,7 @@
       "Height": 1602,
       "ImagePath": "/mountainsCrownImages/Sniezka.jpg",
       "VoivodeshipId": 1,
-      "MountainsRangeId": 26,
-      "Visited": false
+      "MountainsRangeId": 26
     },
     {
         "Id": 27,
@@ -239,8 +213,7 @@
       "Height": 1725,
       "ImagePath": "/mountainsCrownImages/Babia-Gora.jpeg",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 27,
-      "Visited": false
+      "MountainsRangeId": 27
     },
     {
         "Id": 28,
@@ -248,7 +221,6 @@
       "Height": 2499,
       "ImagePath": "/mountainsCrownImages/Rysy.webp",
       "VoivodeshipId": 2,
-      "MountainsRangeId": 28,
-      "Visited": false
+      "MountainsRangeId": 28
     }
 ]

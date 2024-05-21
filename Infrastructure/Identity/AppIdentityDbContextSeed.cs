@@ -17,7 +17,10 @@ namespace Infrastructure.Identity
                 {
                     DisplayName = "Remek",
                     Email = "Remeczek@gmail.com",
-                    UserName = "RemekRemczuk"
+                    UserName = "RemekRemczuk",
+                    VoivodeshipId = 1,
+                    Gender = 0,
+                    DateOfBirth = new DateTime(1991, 01, 12)
                 };
                 await userManager.CreateAsync(user, "Pa$$w0rd");
             }
