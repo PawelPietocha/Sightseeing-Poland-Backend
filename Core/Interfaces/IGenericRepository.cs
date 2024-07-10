@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
 using Core.Specifictions;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Core.Interfaces
 {
@@ -16,5 +17,6 @@ namespace Core.Interfaces
         Task<int> CountAsync(ISpecification<T> spec);
         Task<T> UpdateAsync(T objectToUpdate);
         Task<T> AddAsync(T objectToUpdate);
+        Task<T> DeleteAsync(T objectToDelete);
     }
 }

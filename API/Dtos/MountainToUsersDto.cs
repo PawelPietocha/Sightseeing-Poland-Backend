@@ -1,5 +1,6 @@
 public class MountainToUserDto {
-        public DateTime DateOfVisit { get; set; }
+        public int Id { get; set; }
+        public DateTime? DateOfVisit { get; set; }
         public int? TripTimeMinutes { get; set; }
         public int? TripTimeHours {get; set; }
         public string? StartPlace { get; set; }

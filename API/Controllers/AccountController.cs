@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using System.Text.RegularExpressions;
 using API.Dtos;
 using API.Errors;
 using Core.Entities.Identity;
@@ -130,6 +131,12 @@ namespace API.Controllers
         public async Task<ActionResult<bool>> UpdateUserLoginDetails(UpdateLoginDetailsDto updateLoginDetailsDto) {
             
             var user = await _userManager.FindByIdAsync(updateLoginDetailsDto.Id);
+            var regexPattern = @"(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}";
+            var regexMatch = Regex.Match(updateLoginDetailsDto.Password, regexPattern);
+
+            if (!regexMatch.Success) {
+                return BadRequest();
+            }
 
             await _userManager.RemovePasswordAsync(user);
             await _userManager.AddPasswordAsync(user, updateLoginDetailsDto.Password);

@@ -6,6 +6,7 @@ using Core.Entities;
 using Core.Interfaces;
 using Core.Specifictions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Infrastructure.Data
 {
@@ -56,12 +57,13 @@ namespace Infrastructure.Data
                 return addedEntity;
             }
              );
-             return null;
+             return objectToAdd;
 
         }
 
         public async Task<T> UpdateAsync(T objectToUpdate)
         { 
+            
               var entity = await Task<T>.Run(() =>
             {
                 var updatedEntity =_context.Set<T>().Update(objectToUpdate);
@@ -69,7 +71,20 @@ namespace Infrastructure.Data
                 return updatedEntity;
             }
              );
-             return null;
+             return objectToUpdate;
+
+        }
+
+        public async Task<T> DeleteAsync(T objectToDelete)
+        { 
+              var entity = await Task<T>.Run(() =>
+            {
+                var deletedEntity =_context.Set<T>().Remove(objectToDelete);
+                _context.SaveChangesAsync();
+                return deletedEntity;
+            }
+             );
+             return objectToDelete;
 
         }
     }

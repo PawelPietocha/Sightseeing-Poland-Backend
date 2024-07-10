@@ -47,7 +47,7 @@ namespace API.Controllers
 
             var mountains = await _mountainsRepository.ListAsync(spec);
 
-            var data = _mapper.Map<IReadOnlyList<Mountain>, IReadOnlyList<MountainDto>>(mountains); 
+            var data = _mapper.Map<IReadOnlyList<Mountain>, IReadOnlyList<MountainDto>>(mountains);
 
             return Ok(new Pagination<MountainDto>(mountainsParams.PageIndex, mountainsParams.PageSize, totalItems, data));
         }
@@ -58,7 +58,7 @@ namespace API.Controllers
             var spec = new MountainWithMountainRangeAndVoivodeshipSpecification(id);
             var mountain = await _mountainsRepository.GetEntityWithSpec(spec);
 
-            if(mountain == null )
+            if (mountain == null)
             {
                 return NotFound(new APIResponse(404));
             }
@@ -79,7 +79,7 @@ namespace API.Controllers
         {
             var voivodeship = await _voivodeshipRepository.GetByIdAsync(id);
 
-            if(voivodeship == null )
+            if (voivodeship == null)
             {
                 return NotFound(new APIResponse(404));
             }
@@ -100,7 +100,7 @@ namespace API.Controllers
         {
             var mountainsRange = await _mountainRangeRepository.GetByIdAsync(id);
 
-            if(mountainsRange == null )
+            if (mountainsRange == null)
             {
                 return NotFound(new APIResponse(404));
             }
@@ -109,42 +109,55 @@ namespace API.Controllers
         }
 
         [HttpPost("update")]
-        public async Task<ActionResult<bool>> UpdateMountain(
-            [FromBody] MountainDto mountainDto)
+        public async Task<ActionResult<MountainToUserDto>> UpdateMountain(
+            [FromBody] MountainToUserDto mountainToUsersDto)
         {
-            var mountain = _mapper.Map<MountainDto, Mountain>(mountainDto);
+            var mountainToUser = _mapper.Map<MountainToUserDto, MountainToUsers>(mountainToUsersDto);
 
-            int index = mountain.ImagePath.IndexOf("https://localhost:5001/");
-            string cleanPath = (index < 0)
-                ? mountain.ImagePath
-                : mountain.ImagePath.Remove(index, "https://localhost:5001/".Length);
 
-                mountain.ImagePath = cleanPath;
+            var result = await _mountainToUsersRepository.UpdateAsync(mountainToUser);
 
-            var result = await _mountainsRepository.UpdateAsync(mountain);
-            
-            return false;
+            if (result != null)
+            {
+                return _mapper.Map<MountainToUsers, MountainToUserDto>(result);
+            }
+            return BadRequest();
+        }
+
+        [HttpDelete("delete")]
+        public async Task<ActionResult<bool>> DeleteMountainFromVisited(
+            [FromBody] MountainToUserDto mountainToUsersDto)
+        {
+            var mountainToUser = _mapper.Map<MountainToUserDto, MountainToUsers>(mountainToUsersDto);
+            var result = await _mountainToUsersRepository.DeleteAsync(mountainToUser);
+            if (result != null)
+            {
+                return Ok(true);
+            }
+            return BadRequest();
         }
 
         [HttpPost("markAsVisited")]
-        public async Task<ActionResult<bool>> MarkAsVisited(
+        public async Task<ActionResult<MountainToUserDto>> MarkAsVisited(
             [FromBody] MountainToUserDto mountainToUsersDto)
+        {
+            var mountainToUser = _mapper.Map<MountainToUserDto, MountainToUsers>(mountainToUsersDto);
+            var result = await _mountainToUsersRepository.AddAsync(mountainToUser);
+            if (result != null)
             {
-                var mountainToUser = _mapper.Map<MountainToUserDto, MountainToUsers>(mountainToUsersDto);
-                var result = await _mountainToUsersRepository.AddAsync(mountainToUser);
-                if(result != null) {
-                    return true;
-                }
-                return false;
+                return _mapper.Map<MountainToUsers, MountainToUserDto>(result);
             }
+            return BadRequest();
+        }
         [HttpGet("getVisitedMountainsCrown/{userId}")]
-        public async Task<ActionResult<List<MountainToUserDto>>> GetVisitedMountainsCrown(string userId) {
+        public async Task<ActionResult<List<MountainToUserDto>>> GetVisitedMountainsCrown(string userId)
+        {
             var visitedMountainsCrownToUsers = await _mountainToUsersRepository.ListAllAsync();
             var filteredVisitedList = visitedMountainsCrownToUsers.Where(x => x.UserId == userId);
             var visitedMountainsCrownToUsersDto = _mapper.Map<IEnumerable<MountainToUsers>, List<MountainToUserDto>>(filteredVisitedList);
             return visitedMountainsCrownToUsersDto;
 
         }
-        
-}
+
+    }
 }

@@ -1,115 +1,115 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Babia-Gora.jpeg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Babia-Gora.jpeg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Babia-Gora.jpeg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Biskupia-Kopa.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Biskupia-Kopa.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Biskupia-Kopa.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Chelmiec.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Chelmiec.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Chelmiec.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Czupel.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Czupel.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Czupel.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Jagodna.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Jagodna.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Jagodna.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Klodzka-Gora.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Klodzka-Gora.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Klodzka-Gora.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Kowadlo.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Kowadlo.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Kowadlo.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Lackowa.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Lackowa.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Lackowa.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Lubomir.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Lubomir.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Lubomir.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Lysica.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Lysica.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Lysica.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Mogielica.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Mogielica.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Mogielica.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Orlica.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Orlica.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Orlica.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Radziejowa.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Radziejowa.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Radziejowa.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Rudawiec.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Rudawiec.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Rudawiec.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Rysy.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Rysy.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Rysy.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Skalnik.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Skalnik.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Skalnik.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Skopiec.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Skopiec.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Skopiec.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Skrzyczne.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Skrzyczne.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Skrzyczne.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Sleza.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Sleza.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Sleza.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Sniezka.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Sniezka.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Sniezka.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Snieznik.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Snieznik.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Snieznik.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Szczeliniec-Wielki.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Szczeliniec-Wielki.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Szczeliniec-Wielki.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Tarnica.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Tarnica.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Tarnica.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Turbacz.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Turbacz.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Turbacz.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Waligora.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Waligora.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Waligora.jpg"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Wielka-Sowa.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Wielka-Sowa.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Wielka-Sowa.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Wysoka-Kopa.webp",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Wysoka-Kopa.webp",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Wysoka-Kopa.webp"
     },
     {
-      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\api\\wwwroot\\mountainsCrownImages\\Wysoka.jpg",
+      "Id": "C:\\Users\\48508\\Desktop\\Pawel\\Nauka\\DotNet\\SightseeingPoland\\API\\wwwroot\\mountainsCrownImages\\Wysoka.jpg",
       "PackagePath": "staticwebassets\\mountainsCrownImages\\Wysoka.jpg"
     },
     {
